@@ -32,7 +32,7 @@ var todolist = todolist || {};
 	
 	saveEdited: function(e) {	    
 	    if ((e.type === "focusout") || (e.keyCode === 13)) {
-		this.model.save( {text: $(e.target).val()} );
+		this.model.save( {text: $(e.target).val().trim()} );
 	    } 
 	},
         

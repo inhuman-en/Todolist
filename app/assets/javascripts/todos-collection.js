@@ -8,19 +8,12 @@ var todolist = todolist || {};
         
         url: '/todos',
         
-        //localStorage: new Store("Todolist"),
+        localStorage: new Backbone.LocalStorage("Todolist"),
         
         initialize: function() {
              
         },
-        
-        //addDefaults: function() {
-        //    this.reset([{text: 'do homework', completed: false},
-        //                {text: 'go to supermarket', completed: true},
-        //                {text: 'prepare dinner', completed: false},
-        //                {text: 'and one more thing', completed: true}]);
-        //}
-        
+                
         getCompleted: function(flag) {
             return this.where({completed: flag});
         }        

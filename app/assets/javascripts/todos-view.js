@@ -33,9 +33,9 @@ var todolist = todolist || {};
 	        field = $(e.target);
 	    
 	    if (e.keyCode === 13) {
-		model = new ns.Todo( {text: field.val()} );
-		model.save();
-		this.collection.add(model);
+		//model = new ns.Todo( {text: field.val()} );
+		//model.save();
+		this.collection.create({text: field.val()});
 		field.val('');
 	    }	    
 	},
