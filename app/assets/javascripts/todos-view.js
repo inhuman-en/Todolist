@@ -17,9 +17,6 @@ var todolist = todolist || {};
 	
         initialize: function() {
 	    this.collection.on('all', this.render, this);
-	    //this.collection.on('add', this.addTodoTolist, this);
-	    //this.listenTo(this.collection, 'reset', this.render);
-	    //this.listenTo(this.collection, 'add', this.addTodoTolist);
 	    this.collection.fetch();
         },
         
@@ -33,8 +30,6 @@ var todolist = todolist || {};
 	        field = $(e.target);
 	    
 	    if (e.keyCode === 13) {
-		//model = new ns.Todo( {text: field.val()} );
-		//model.save();
 		this.collection.create({text: field.val()});
 		field.val('');
 	    }	    

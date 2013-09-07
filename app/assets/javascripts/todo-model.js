@@ -12,7 +12,7 @@ var todolist = todolist || {};
         },
         
         initialize: function() {
-            console.log('model initialized');  
+
         },
         
         toggleCompleted: function () {

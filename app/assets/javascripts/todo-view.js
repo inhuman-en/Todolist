@@ -20,7 +20,6 @@ var todolist = todolist || {};
         },
         
         initialize: function() {
-            console.log('todo view initialized');
             this.model.on('change', this.render, this);
         },
 	
@@ -33,6 +32,7 @@ var todolist = todolist || {};
 	saveEdited: function(e) {	    
 	    if ((e.type === "focusout") || (e.keyCode === 13)) {
 		this.model.save( {text: $(e.target).val().trim()} );
+		this.render();
 	    } 
 	},
         
@@ -43,7 +43,6 @@ var todolist = todolist || {};
         deleteTodo: function() {
 	    this.model.destroy();
 	    this.undelegateEvents();
-	    //this.remove();          
         },
 	        
         render: function() {
