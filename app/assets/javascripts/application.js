@@ -1,0 +1,14 @@
+//= require jquery
+//= require jquery_ujs
+//= require underscore
+//= require backbone
+//= require components/backbone.localStorage
+//= require components/bootstrap.min
+//= require templates/todo-tpl
+//= require templates/todo-edit-tpl
+//= require templates/todos-tpl
+//= require todo-model
+//= require todos-collection
+//= require todo-view
+//= require todos-view
+//= require main

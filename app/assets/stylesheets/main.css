@@ -1,0 +1,74 @@
+.main-container {
+    width: 390px;    
+}
+
+.breadcrumb {
+    margin-top: 10px;
+    font-size: 10px;
+    background-color: #dcfa9d;
+}
+
+.breadcrumb li a:hover{
+    background-color: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
+.breadcrumb span{
+    display: block;
+    float: right;
+}
+
+#list {
+    display: block;
+    position: static;
+    border-top: 0px;
+    margin-bottom: 5px;
+    margin-top: 0px;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+}
+
+#list li {
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 18px;
+    line-height: 20px;
+    margin-top: 2px;
+    font-family: serif monospace;
+    font-size: 14px;
+}
+
+.todo .delete-todo {
+    display: inline-block;
+    float: right;
+    margin-top: 4px;
+}
+
+.todo:hover {
+    background-color: #dcfa9d;
+}
+
+.todo .edit {
+    width: 270px;
+    border: 1px solid #ddd;
+    margin-top: 4px;
+}
+    
+#new-todo {
+    font-size: 16px;
+    font-style: italic;
+    width: 320px;
+    height: 30px;
+    padding-left: 5px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+}
+
+#new-todo:focus, .todo .edit:focus {
+    outline: none;
+    border-color: #dcfa9d;
+    box-shadow: 0 0 10px #dcfa9d;
+}
+
